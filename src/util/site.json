@@ -3,7 +3,7 @@
     "title": "Tracker",
     "titleTemplate": "%s",
     "description": "Tracker for tracking project",
-    "siteUrl": "https://thetracker.netlify.app",
+    "siteUrl": "https://converged.netlify.app",
     "image": "/assets/stackrole.png",
     "twitterUsername": "@stackrole"
   },
