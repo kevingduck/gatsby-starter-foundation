@@ -9,7 +9,7 @@ backend:
     deleteMedia: '[skip ci] Delete “{{path}}”'
 
 # Uncomment local_backend when you need to develop in your local
-#local_backend: true # run npx netlify-cms-proxy-server for local testing
+local_backend: true # run npx netlify-cms-proxy-server for local testing
 
 media_folder: "static/assets" 
 public_folder: "/assets" 
@@ -75,6 +75,14 @@ collections:
         fields:
         - {label: "Template", name: "template", widget: "hidden", default: "about-page" }
         - {label: "Slug", name: "slug", widget: "hidden", default: "/about" }
+        - {label: "Title", name: "title", widget: "string"}
+        - {label: "Body", name: "body", widget: "markdown"}
+      - label: "Projects"
+        name: "projects"
+        file: "src/content/pages/projects.md"
+        fields:
+        - {label: "Template", name: "template", widget: "hidden", default: "projects-page" }
+        - {label: "Slug", name: "slug", widget: "hidden", default: "/projects" }
         - {label: "Title", name: "title", widget: "string"}
         - {label: "Body", name: "body", widget: "markdown"}
       - label: "Contact"

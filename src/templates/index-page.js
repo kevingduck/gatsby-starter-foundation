@@ -48,7 +48,7 @@ const HomePage = ({ data }) => {
           <div className="description" dangerouslySetInnerHTML={{__html: html}}/>
           <Link to={frontmatter.cta.ctaLink} className="button">{frontmatter.cta.ctaText}<span class="icon -right"><RiArrowRightSLine/></span></Link>
         </div>
-        <div>
+        {/* <div>
           {Image ? (
             <Img 
               fluid={Image} 
@@ -56,7 +56,7 @@ const HomePage = ({ data }) => {
               className="featured-image"
             />
           ) : ""}
-        </div>
+        </div> */}
       </div>
       <BlogListHome/>
 		</Layout>
